@@ -34,6 +34,27 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+
+            var myBird = new Bird();
+            myBird.WingColor = "blue";
+            myBird.CanFly = true;
+            myBird.DoMigrate = true;
+            myBird.BeakLength = 3.5;
+
+            Console.WriteLine($"My Bird's color is {myBird.WingColor}, " +
+                $",and my bird's beak length is {myBird.BeakLength} inches");
+            Console.WriteLine($"Can my Bird fly and does it migrate ?");
+            Console.WriteLine($"{myBird.CanFly}, and {myBird.DoMigrate}");
+
+            var lizard = new Reptile();
+            lizard.IsColdBlooded = true;
+            lizard.IsScaly = true;
+            lizard.Habitat = "swamp";
+            lizard.CanGrowTail = true;
+
+            Console.WriteLine($"My Reptile is a {lizard.Habitat} Habitat");
+            Console.WriteLine($"Is my reptile Cold blooded, Scaly, and Can it grow tail ?");
+            Console.WriteLine($"{lizard.IsColdBlooded}, {lizard.IsScaly}, and {lizard.CanGrowTail}");
         }
     }
 }
